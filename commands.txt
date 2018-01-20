@@ -1,0 +1,83 @@
+Open Terminal:
+Window Key and "R" key at the same time then enter CMD press enter.
+
+Navigate to your Desktop:
+C:\Windows\System32>cd..
+C:\Windows>cd..
+C:\>cd Users
+C:\Users>cd mquon
+C:\Users\mquon>cd Desktop
+C:\Users\mquon\Desktop>
+
+Create a new directory, call it 'test':
+C:\Users\mquon\Desktop>md test
+
+Make files called index.html, styles.css, commands.txt inside the test directory:
+C:\Users\mquon\Desktop>cd test
+
+C:\Users\mquon\Desktop\test>copy NUL index.html
+        1 file(s) copied.
+
+C:\Users\mquon\Desktop\test>copy NUL styles.css
+        1 file(s) copied.
+
+C:\Users\mquon\Desktop\test>copy NUL command.txt
+        1 file(s) copied.
+
+Make a copy of index.html and call it index_2.html:
+C:\Users\mquon\Desktop\test>copy index.html index2.html
+        1 file(s) copied.
+
+In the 'test' directory, remove the 'styles.css' file:
+C:\Users\mquon\Desktop\test>del styles.css
+
+Navigate back to your desktop and make another directory, call it 'destination':
+C:\Users\mquon\Desktop\test>cd..
+
+C:\Users\mquon\Desktop>md destination
+
+Move the index_2.html file from 'test' to the 'destination' directory:
+C:\Users\mquon\Desktop\destination>move C:\Users\mquon\Desktop\test\index2.html C:\Users\mquon\Desktop\destination
+        1 file(s) moved.
+
+Now, check and see what files are in the 'test' and 'destination' directories:
+ Directory of C:\Users\mquon\Desktop\destination
+
+01/19/2018  05:38 PM    <DIR>          .
+01/19/2018  05:38 PM    <DIR>          ..
+01/19/2018  05:32 PM                 0 index2.html
+               1 File(s)              0 bytes
+C:\Users\mquon\Desktop\destination>cd..
+
+C:\Users\mquon\Desktop>cd test
+
+C:\Users\mquon\Desktop\test>dir
+ Volume in drive C is OS
+ Volume Serial Number is 514B-AFA4
+
+ Directory of C:\Users\mquon\Desktop\test
+
+01/19/2018  05:38 PM    <DIR>          .
+01/19/2018  05:38 PM    <DIR>          ..
+01/19/2018  05:33 PM                 0 command.txt
+01/19/2018  05:32 PM                 0 index.html
+               2 File(s)              0 bytes
+               2 Dir(s)  78,423,457,792 bytes free
+
+               2 Dir(s)  78,423,457,792 bytes free
+
+Delete the 'destination' directory:
+C:\Users\mquon\Desktop>rd destination
+
+C:\Users\mquon\Desktop>dir
+ Volume in drive C is OS
+ Volume Serial Number is 514B-AFA4
+
+ Directory of C:\Users\mquon\Desktop
+
+01/19/2018  05:52 PM    <DIR>          .
+01/19/2018  05:52 PM    <DIR>          ..
+01/05/2018  04:32 PM             5,712 Purge_WB.bat
+01/19/2018  05:38 PM    <DIR>          test
+               1 File(s)          5,712 bytes
+               3 Dir(s)  78,422,605,824 bytes free
