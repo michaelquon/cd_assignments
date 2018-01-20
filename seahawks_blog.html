@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<meta charset="utf-8">
+	    <meta charset="utf-8">
         <title>Seattle Seahawks</title>
         <style>
+            body{
+                text-align: center;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
             h1{
                 text-align: center;
             }
@@ -12,9 +17,15 @@
                 margin: 0 auto;
                 width: 400px;
             }
-            table{
+            table, td{
+                border: 1px solid gray;
                 text-align: center;
+                margin: auto;
             }
+            ul{
+                list-style: none;
+            }
+
         </style>
     </head> 
     <body>
@@ -28,9 +39,9 @@
         (1994, 2000–2001). The Seahawks are the only NFL franchise based in the Pacific Northwest region of North America, and thus attract support from a wide 
         geographical area, including some parts of Oregon, Montana, Idaho, and Alaska, as well as Canadian fans in British Columbia and Alberta.</p>
         </div>
-        <p>The table below represents the last 5 seasons in the NFL for the Seattle Seahawks</p>
-
+        
         <table>
+            <p>The table below represents the last 5 seasons in the NFL for the Seattle Seahawks</p>
                 <tr>
                         <th>Season</th>
                         <th>Conference</th>
@@ -87,7 +98,7 @@
         </div>
 
         <div>
-            <p><b>Please take this short survey</b></p>
+            <h3><b>Please take this short survey</b></h3>
             <form>
                 <p>
                     <label for="email_address">Email Address:</label>
@@ -101,12 +112,12 @@
                     <label for="dont_watch">Don't watch football</label>
                     <input type="radio" id="dont_watch" name="fan" value="dont_watch">       
                 </p>
-                <p><b>How did you hear about this site?</b></p>
+                <h3><b>How did you hear about this site?</b></h3>
                 <p>
                     <label for="facebook">Facebook</label>
-                    <input type="checkbox" id="facebook" name="about_us" value="facebook"><br/>
+                    <input type="checkbox" id="facebook" name="about_us" value="facebook">
                     <label for="twitter">Twitter</label>
-                    <input type="checkbox" id="twitter" name="about_us" value="twitter"><br/>
+                    <input type="checkbox" id="twitter" name="about_us" value="twitter">
                     <label for="some_other">Other</label>
                     <input type="checkbox" id="some_other" name="about_us" value="some_other">
                 </p>
